@@ -3,7 +3,7 @@ package by.makedon.epam3.reader;
 import by.makedon.epam3.entity.Dot;
 import by.makedon.epam3.exception.WrongDataException;
 import by.makedon.epam3.exception.IncorrectFileException;
-import by.makedon.epam3.parser.StringDataParser;
+import by.makedon.epam3.parser.DotParser;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -33,13 +33,13 @@ public class ReaderOfFile {
             List<Dot[]> fileDataList = new ArrayList<Dot[]>();
             try {
                 scanner = new Scanner(new File(filename));
-                StringDataParser stringDataParser = new StringDataParser();
+                DotParser dotParser = new DotParser();
 
                 while (scanner.hasNextLine()) {
                     String stringData = scanner.nextLine();
                     try {
-                        if (stringDataParser.isParseString(stringData, delimiter)) {
-                            fileDataList.add(stringDataParser.takeDots(stringData, delimiter));
+                        if (dotParser.isParseString(stringData, delimiter)) {
+                            fileDataList.add(dotParser.takeDots(stringData, delimiter));
                             logger.log(Level.INFO, stringData + " has read correct");
                         }
                     } catch (WrongDataException exception) {

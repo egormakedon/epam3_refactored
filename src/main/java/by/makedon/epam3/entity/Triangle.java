@@ -2,7 +2,7 @@ package by.makedon.epam3.entity;
 
 import by.makedon.epam3.action.DotAction;
 import by.makedon.epam3.exception.WrongDataException;
-import by.makedon.epam3.validator.TriangleValidator;
+import by.makedon.epam3.validator.DotValidator;
 import by.makedon.epam3.validator.TriangleIndexValidator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -17,9 +17,9 @@ public class Triangle extends Observable {
     static Logger logger = LogManager.getLogger(Triangle.class);
 
     public Triangle(Dot dot1, Dot dot2, Dot dot3) {
-        TriangleValidator triangleValidator = new TriangleValidator();
+        DotValidator dotValidator = new DotValidator();
         try {
-            if(triangleValidator.dotsValidation(dot1, dot2, dot3)) {
+            if(dotValidator.dotsValidation(dot1, dot2, dot3)) {
                 dots = new Dot[DOT_AMOUNT];
                 dots[0] = dot1;
                 dots[1] = dot2;
@@ -31,9 +31,9 @@ public class Triangle extends Observable {
         }
     }
     public Triangle(Dot[] dots) {
-        TriangleValidator triangleValidator = new TriangleValidator();
+        DotValidator dotValidator = new DotValidator();
         try {
-            if(triangleValidator.dotsValidation(dots)) {
+            if(dotValidator.dotsValidation(dots)) {
                 this.dots = new Dot[DOT_AMOUNT];
                 this.dots[0] = dots[0];
                 this.dots[1] = dots[1];
@@ -46,9 +46,9 @@ public class Triangle extends Observable {
     }
 
     public void set(Dot dot1, Dot dot2, Dot dot3) {
-        TriangleValidator triangleValidator = new TriangleValidator();
+        DotValidator dotValidator = new DotValidator();
         try {
-            if(triangleValidator.dotsValidation(dot1, dot2, dot3)) {
+            if(dotValidator.dotsValidation(dot1, dot2, dot3)) {
                 dots[0] = dot1;
                 dots[1] = dot2;
                 dots[2] = dot3;
@@ -61,9 +61,9 @@ public class Triangle extends Observable {
         }
     }
     public void set(Dot[] dots) {
-        TriangleValidator triangleValidator = new TriangleValidator();
+        DotValidator dotValidator = new DotValidator();
         try {
-            if(triangleValidator.dotsValidation(dots)) {
+            if(dotValidator.dotsValidation(dots)) {
                 this.dots[0] = dots[0];
                 this.dots[1] = dots[1];
                 this.dots[2] = dots[2];
@@ -81,8 +81,8 @@ public class Triangle extends Observable {
         if (triangleIndexValidator.indexValidation(index)) {
             Dot currDot = dots[index];
             dots[index] = newDot;
-            TriangleValidator triangleValidator = new TriangleValidator();
-            if (triangleValidator.dotsValidation(dots)) {
+            DotValidator dotValidator = new DotValidator();
+            if (dotValidator.dotsValidation(dots)) {
                 super.setChanged();
                 this.notifyObservers();
             } else {
