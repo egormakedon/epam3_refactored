@@ -14,107 +14,66 @@ import java.util.Observable;
 public class Triangle extends Observable {
     private Dot[] dots;
     private final int DOT_AMOUNT = 3;
-    static Logger logger = LogManager.getLogger(Triangle.class);
+    private final static Logger LOGGER = LogManager.getLogger(Triangle.class);
 
-    public Triangle(Dot dot1, Dot dot2, Dot dot3) {
+    public Triangle(Dot dot1, Dot dot2, Dot dot3) throws WrongDataException {
         DotValidator dotValidator = new DotValidator();
-        try {
-            if(dotValidator.dotsValidation(dot1, dot2, dot3)) {
-                dots = new Dot[DOT_AMOUNT];
-                dots[0] = dot1;
-                dots[1] = dot2;
-                dots[2] = dot3;
-                logger.log(Level.INFO, this.toString() + " create successfully");
-            }
-        } catch (WrongDataException exception) {
-            logger.log(Level.ERROR, exception.getMessage());
-        }
-    }
-    public Triangle(Dot[] dots) {
-        DotValidator dotValidator = new DotValidator();
-        try {
-            if(dotValidator.dotsValidation(dots)) {
-                this.dots = new Dot[DOT_AMOUNT];
-                this.dots[0] = dots[0];
-                this.dots[1] = dots[1];
-                this.dots[2] = dots[2];
-                logger.log(Level.INFO, this.toString() + " create successfully");
-            }
-        } catch (WrongDataException exception) {
-            logger.log(Level.ERROR, exception.getMessage());
+        if(dotValidator.validate(dot1, dot2, dot3)) {
+            dots = new Dot[DOT_AMOUNT];
+            dots[0] = dot1;
+            dots[1] = dot2;
+            dots[2] = dot3;
+            LOGGER.log(Level.INFO, this.toString() + " create successfully");
+        } else {
+            throw new WrongDataException("Triangle hasn't created: wrong parameters");
         }
     }
 
-    public void set(Dot dot1, Dot dot2, Dot dot3) {
+    public Triangle(Dot[] dots) throws WrongDataException {
         DotValidator dotValidator = new DotValidator();
-        try {
-            if(dotValidator.dotsValidation(dot1, dot2, dot3)) {
-                dots[0] = dot1;
-                dots[1] = dot2;
-                dots[2] = dot3;
-                logger.log(Level.INFO, this.toString() + " create successfully");
-                super.setChanged();
-                this.notifyObservers();
-            }
-        } catch (WrongDataException exception) {
-            logger.log(Level.ERROR, exception.getMessage());
-        }
-    }
-    public void set(Dot[] dots) {
-        DotValidator dotValidator = new DotValidator();
-        try {
-            if(dotValidator.dotsValidation(dots)) {
-                this.dots[0] = dots[0];
-                this.dots[1] = dots[1];
-                this.dots[2] = dots[2];
-                logger.log(Level.INFO, this.toString() + " create successfully");
-                super.setChanged();
-                this.notifyObservers();
-            }
-        } catch (WrongDataException exception) {
-            logger.log(Level.ERROR, exception.getMessage());
+        if(dotValidator.validate(dots[0], dots[1], dots[2])) {
+            this.dots = new Dot[DOT_AMOUNT];
+            this.dots[0] = dots[0];
+            this.dots[1] = dots[1];
+            this.dots[2] = dots[2];
+            LOGGER.log(Level.INFO, this.toString() + " create successfully");
+        } else {
+            throw new WrongDataException("Triangle hasn't created: wrong parameters");
         }
     }
 
-    public void replaceDot(Dot newDot, int index) throws WrongDataException {
+    public void replaceDot(Dot newDot, int index) {
         TriangleIndexValidator triangleIndexValidator = new TriangleIndexValidator();
-        if (triangleIndexValidator.indexValidation(index)) {
+        if (triangleIndexValidator.validate(index)) {
             Dot currDot = dots[index];
             dots[index] = newDot;
             DotValidator dotValidator = new DotValidator();
-            if (dotValidator.dotsValidation(dots)) {
+            if (dotValidator.validate(dots[0], dots[1], dots[2])) {
                 super.setChanged();
                 this.notifyObservers();
             } else {
                 dots[index] = currDot;
-                throw new WrongDataException("Can't replace " + dots[index].toString() + " to " + newDot.toString() + " in " + this.toString());
+                LOGGER.log(Level.ERROR, "Can't replace " + dots[index].toString() + " to " + newDot.toString() + " in " + this.toString());
             }
+        } else {
+            LOGGER.log(Level.ERROR, "Wrong index: " + index);
         }
     }
 
-    public Dot getDot(int index) throws WrongDataException {
+    public Dot getDot(int index) {
         TriangleIndexValidator triangleIndexValidator = new TriangleIndexValidator();
-        try {
-            if (triangleIndexValidator.indexValidation(index)) {
-                return dots[index];
-            }
-        } catch (WrongDataException exception) {
-            logger.log(Level.ERROR, exception.getMessage());
+        if (triangleIndexValidator.validate(index)) {
+            return dots[index];
+        } else {
+            return null;
         }
-        return null;
     }
 
     public boolean isRect() {
         DotAction dotAction = new DotAction();
-
         return (dotAction.isRectangle(dots[1], dots[0], dots[2]) ||
                 dotAction.isRectangle(dots[0], dots[1], dots[2]) ||
                 dotAction.isRectangle(dots[1], dots[2], dots[0]));
-    }
-
-    @Override
-    public String toString() {
-        return dots[0].toString() + " " + dots[1].toString() + " " + dots[2].toString();
     }
 
     @Override
@@ -134,5 +93,10 @@ public class Triangle extends Observable {
         int result = Arrays.hashCode(dots);
         result = 31 * result + DOT_AMOUNT;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return dots[0].toString() + " " + dots[1].toString() + " " + dots[2].toString();
     }
 }

@@ -24,13 +24,13 @@ public class AtributRegister implements Observer {
         atributMap.put(triangle, calculateCharacters(triangle));
     }
 
-    public List<Double> get(Triangle triangle) throws WrongDataException {
+    public List<Double> get(Triangle triangle) {
         for (Map.Entry<Triangle, List<Double>> entry : atributMap.entrySet()) {
             if (entry.getKey() == triangle) {
                 return entry.getValue();
             }
         }
-        throw new WrongDataException(triangle.toString() + " hasn't found in atributRegister");
+        return null;
     }
 
     @Override

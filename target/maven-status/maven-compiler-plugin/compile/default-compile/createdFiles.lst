@@ -1,0 +1,17 @@
+by/makedon/epam3/register/TriangleRegister$1.class
+by/makedon/epam3/parser/DotParser.class
+by/makedon/epam3/register/AtributRegister.class
+by/makedon/epam3/validator/DotParserValidator.class
+by/makedon/epam3/action/TriangleAction.class
+by/makedon/epam3/register/AtributRegister$1.class
+by/makedon/epam3/register/TriangleRegister$SingletonHolder.class
+by/makedon/epam3/entity/Dot.class
+by/makedon/epam3/validator/TriangleIndexValidator.class
+by/makedon/epam3/register/TriangleRegister.class
+by/makedon/epam3/exception/IncorrectFileException.class
+by/makedon/epam3/reader/DotReader.class
+by/makedon/epam3/entity/Triangle.class
+by/makedon/epam3/exception/WrongDataException.class
+by/makedon/epam3/action/DotAction.class
+by/makedon/epam3/validator/DotValidator.class
+by/makedon/epam3/register/AtributRegister$SingletonHolder.class

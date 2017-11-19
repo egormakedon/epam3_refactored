@@ -25,15 +25,15 @@
         </classes>
     </test>
 
-    <test name="TestReaderOfFile">
+    <test name="TestDotReader">
         <classes>
-            <class name="TestReaderOfFile"/>
+            <class name="TestDotReader"/>
         </classes>
     </test>
 
     <test name="TestObserver">
         <classes>
-            <class name="TestReaderOfFile"/>
+            <class name="TestDotReader"/>
         </classes>
     </test>
 </suite>

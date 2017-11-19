@@ -1,54 +1,53 @@
-2017-11-18 22:20:05.268 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - in/in.txt has found
-2017-11-18 22:20:05.280 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 0.0 0.0 0.0 2.0 3.0 0.0 has read correct
-2017-11-18 22:20:05.280 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - -1.0 0.0 2.0 3.0 1.0 4.0 has read correct
-2017-11-18 22:20:05.281 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 2.z1 3.10 2.20 3.11 4.44 5.0 hasn't read: wrong parameters
-2017-11-18 22:20:05.281 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 1.0 0.0 1.0 4.0 10.0 0.0 has read correct
-2017-11-18 22:20:05.281 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (1.0;1.0) (2.0;2.0) (3.0;3.0) don't compose triangle
-2017-11-18 22:20:05.281 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 1.0 1.0 2.0 2.0 5.0 1.5 has read correct
-2017-11-18 22:20:05.282 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 0.0 0.0 hasn't read: wrong parameters
-2017-11-18 22:20:05.282 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (1.0;1.0) (1.0;1.0) (1.0;1.0) don't compose triangle
-2017-11-18 22:20:05.282 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 2.0 3.0 3.0 2.0 4.0 5.0 has read correct
-2017-11-18 22:20:05.282 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - qwerty qwerty qwerty hasn't read: wrong parameters
-2017-11-18 22:20:05.283 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 5 5 2 2 3 3 hasn't read: wrong parameters
-2017-11-18 22:20:05.283 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (0.0;0.0) (1.1;1.1) (2.2;2.2) don't compose triangle
-2017-11-18 22:20:05.284 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;2.0) (3.0;0.0) create successfully
-2017-11-18 22:20:05.284 [main] INFO  by.makedon.epam3.entity.Triangle - (-1.0;0.0) (2.0;3.0) (1.0;4.0) create successfully
-2017-11-18 22:20:05.284 [main] INFO  by.makedon.epam3.entity.Triangle - (1.0;0.0) (1.0;4.0) (10.0;0.0) create successfully
-2017-11-18 22:20:05.284 [main] INFO  by.makedon.epam3.entity.Triangle - (1.0;1.0) (2.0;2.0) (5.0;1.5) create successfully
-2017-11-18 22:20:05.284 [main] INFO  by.makedon.epam3.entity.Triangle - (2.0;3.0) (3.0;2.0) (4.0;5.0) create successfully
-2017-11-18 22:20:05.285 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;2.0) (3.0;0.0) has area 3.000000000000001
-2017-11-18 22:20:05.285 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;2.0) (3.0;0.0) has perimeter 8.60555127546399
-2017-11-18 22:20:05.285 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-1.0;0.0) (2.0;3.0) (1.0;4.0) has area 2.9999999999999996
-2017-11-18 22:20:05.285 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-1.0;0.0) (2.0;3.0) (1.0;4.0) has perimeter 10.12899020449196
-2017-11-18 22:20:05.285 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;0.0) (1.0;4.0) (10.0;0.0) has area 18.0
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;0.0) (1.0;4.0) (10.0;0.0) has perimeter 22.848857801796104
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;1.0) (2.0;2.0) (5.0;1.5) has area 1.7500000000000009
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;1.0) (2.0;2.0) (5.0;1.5) has perimeter 8.48672370167148
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (2.0;3.0) (3.0;2.0) (4.0;5.0) has area 2.0000000000000013
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (2.0;3.0) (3.0;2.0) (4.0;5.0) has perimeter 7.404918347287666
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;-100.0) (0.0;2.0) (3.0;0.0) has area 253.00000000000244
-2017-11-18 22:20:05.286 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;-100.0) (0.0;2.0) (3.0;0.0) has perimeter 290.00647246680444
-2017-11-18 22:20:05.287 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - in/in.txt has found
-2017-11-18 22:20:05.288 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - in/in.txt has found
-2017-11-18 22:20:05.289 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 0.0 0.0 0.0 2.0 3.0 0.0 has read correct
-2017-11-18 22:20:05.289 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - -1.0 0.0 2.0 3.0 1.0 4.0 has read correct
-2017-11-18 22:20:05.290 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 2.z1 3.10 2.20 3.11 4.44 5.0 hasn't read: wrong parameters
-2017-11-18 22:20:05.290 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 1.0 0.0 1.0 4.0 10.0 0.0 has read correct
-2017-11-18 22:20:05.290 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (1.0;1.0) (2.0;2.0) (3.0;3.0) don't compose triangle
-2017-11-18 22:20:05.291 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 1.0 1.0 2.0 2.0 5.0 1.5 has read correct
-2017-11-18 22:20:05.291 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 0.0 0.0 hasn't read: wrong parameters
-2017-11-18 22:20:05.291 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (1.0;1.0) (1.0;1.0) (1.0;1.0) don't compose triangle
-2017-11-18 22:20:05.291 [main] INFO  by.makedon.epam3.reader.ReaderOfFile - 2.0 3.0 3.0 2.0 4.0 5.0 has read correct
-2017-11-18 22:20:05.292 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - qwerty qwerty qwerty hasn't read: wrong parameters
-2017-11-18 22:20:05.292 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - 5 5 2 2 3 3 hasn't read: wrong parameters
-2017-11-18 22:20:05.293 [main] ERROR by.makedon.epam3.reader.ReaderOfFile - (0.0;0.0) (1.1;1.1) (2.2;2.2) don't compose triangle
-2017-11-18 22:20:05.299 [main] INFO  by.makedon.epam3.entity.Triangle - (-20.0;0.0) (0.0;20.0) (5.0;0.0) create successfully
-2017-11-18 22:20:05.300 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;20.0) (5.0;0.0) create successfully
-2017-11-18 22:20:05.300 [main] INFO  by.makedon.epam3.entity.Triangle - (-100.0;20.0) (1000.0;10.0) (20.0;0.0) create successfully
-2017-11-18 22:20:05.300 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;20.0) (1000.0;10.0) (20.0;0.0) has area 10399.999999999343
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;10.0) (20.0;0.0) create successfully
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;10.0) (20.0;0.0) has area 100.0
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.entity.Triangle - (10.0;10.0) (1.0;5.0) (1.0;0.0) create successfully
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (10.0;10.0) (1.0;5.0) (1.0;0.0) has perimeter 28.74925418806071
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.entity.Triangle - (10.0;10.0) (1.0;5.0) (1.0;0.0) create successfully
-2017-11-18 22:20:05.301 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (10.0;10.0) (1.0;5.0) (1.0;0.0) has perimeter 28.74925418806071
+2017-11-19 15:15:43.683 [main] INFO  by.makedon.epam3.reader.DotReader - in/in.txt has found
+2017-11-19 15:15:43.691 [main] INFO  by.makedon.epam3.reader.DotReader - 0.0 0.0 0.0 2.0 3.0 0.0 has read correct
+2017-11-19 15:15:43.692 [main] INFO  by.makedon.epam3.reader.DotReader - -1.0 0.0 2.0 3.0 1.0 4.0 has read correct
+2017-11-19 15:15:43.692 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 2.z1 3.10 2.20 3.11 4.44 5.0 hasn't read: wrong parameters
+2017-11-19 15:15:43.693 [main] INFO  by.makedon.epam3.reader.DotReader - 1.0 0.0 1.0 4.0 10.0 0.0 has read correct
+2017-11-19 15:15:43.693 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 1.0 1.0 2.0 2.0 3.0 3.0 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.693 [main] INFO  by.makedon.epam3.reader.DotReader - 1.0 1.0 2.0 2.0 5.0 1.5 has read correct
+2017-11-19 15:15:43.693 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 0.0 0.0 hasn't read: wrong parameters
+2017-11-19 15:15:43.694 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 1.0 1.0 1.0 1.0 1.0 1.0 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.694 [main] INFO  by.makedon.epam3.reader.DotReader - 2.0 3.0 3.0 2.0 4.0 5.0 has read correct
+2017-11-19 15:15:43.694 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: qwerty qwerty qwerty hasn't read: wrong parameters
+2017-11-19 15:15:43.694 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 5 5 2 2 3 3 hasn't read: wrong parameters
+2017-11-19 15:15:43.695 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 0.0 0.0 1.1 1.1 2.2 2.2 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.697 [main] INFO  by.makedon.epam3.reader.DotReader - in/in.txt has found
+2017-11-19 15:15:43.698 [main] INFO  by.makedon.epam3.reader.DotReader - 0.0 0.0 0.0 2.0 3.0 0.0 has read correct
+2017-11-19 15:15:43.698 [main] INFO  by.makedon.epam3.reader.DotReader - -1.0 0.0 2.0 3.0 1.0 4.0 has read correct
+2017-11-19 15:15:43.698 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 2.z1 3.10 2.20 3.11 4.44 5.0 hasn't read: wrong parameters
+2017-11-19 15:15:43.698 [main] INFO  by.makedon.epam3.reader.DotReader - 1.0 0.0 1.0 4.0 10.0 0.0 has read correct
+2017-11-19 15:15:43.699 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 1.0 1.0 2.0 2.0 3.0 3.0 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.699 [main] INFO  by.makedon.epam3.reader.DotReader - 1.0 1.0 2.0 2.0 5.0 1.5 has read correct
+2017-11-19 15:15:43.699 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 0.0 0.0 hasn't read: wrong parameters
+2017-11-19 15:15:43.699 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 1.0 1.0 1.0 1.0 1.0 1.0 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.699 [main] INFO  by.makedon.epam3.reader.DotReader - 2.0 3.0 3.0 2.0 4.0 5.0 has read correct
+2017-11-19 15:15:43.700 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: qwerty qwerty qwerty hasn't read: wrong parameters
+2017-11-19 15:15:43.700 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 5 5 2 2 3 3 hasn't read: wrong parameters
+2017-11-19 15:15:43.700 [main] ERROR by.makedon.epam3.reader.DotReader - by.makedon.epam3.exception.WrongDataException: 0.0 0.0 1.1 1.1 2.2 2.2 hasn't read: dots don't compose a triangle
+2017-11-19 15:15:43.701 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;2.0) (3.0;0.0) create successfully
+2017-11-19 15:15:43.701 [main] INFO  by.makedon.epam3.entity.Triangle - (-1.0;0.0) (2.0;3.0) (1.0;4.0) create successfully
+2017-11-19 15:15:43.701 [main] INFO  by.makedon.epam3.entity.Triangle - (1.0;0.0) (1.0;4.0) (10.0;0.0) create successfully
+2017-11-19 15:15:43.701 [main] INFO  by.makedon.epam3.entity.Triangle - (1.0;1.0) (2.0;2.0) (5.0;1.5) create successfully
+2017-11-19 15:15:43.701 [main] INFO  by.makedon.epam3.entity.Triangle - (2.0;3.0) (3.0;2.0) (4.0;5.0) create successfully
+2017-11-19 15:15:43.702 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;2.0) (3.0;0.0) has area 3.000000000000001
+2017-11-19 15:15:43.702 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;2.0) (3.0;0.0) has perimeter 8.60555127546399
+2017-11-19 15:15:43.702 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-1.0;0.0) (2.0;3.0) (1.0;4.0) has area 2.9999999999999996
+2017-11-19 15:15:43.702 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-1.0;0.0) (2.0;3.0) (1.0;4.0) has perimeter 10.12899020449196
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;0.0) (1.0;4.0) (10.0;0.0) has area 18.0
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;0.0) (1.0;4.0) (10.0;0.0) has perimeter 22.848857801796104
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;1.0) (2.0;2.0) (5.0;1.5) has area 1.7500000000000009
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (1.0;1.0) (2.0;2.0) (5.0;1.5) has perimeter 8.48672370167148
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (2.0;3.0) (3.0;2.0) (4.0;5.0) has area 2.0000000000000013
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (2.0;3.0) (3.0;2.0) (4.0;5.0) has perimeter 7.404918347287666
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;-100.0) (0.0;2.0) (3.0;0.0) has area 253.00000000000244
+2017-11-19 15:15:43.703 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;-100.0) (0.0;2.0) (3.0;0.0) has perimeter 290.00647246680444
+2017-11-19 15:15:43.704 [main] INFO  by.makedon.epam3.entity.Triangle - (-20.0;0.0) (0.0;20.0) (5.0;0.0) create successfully
+2017-11-19 15:15:43.704 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;20.0) (5.0;0.0) create successfully
+2017-11-19 15:15:43.705 [main] INFO  by.makedon.epam3.entity.Triangle - (-100.0;20.0) (1000.0;10.0) (20.0;0.0) create successfully
+2017-11-19 15:15:43.705 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (-100.0;20.0) (1000.0;10.0) (20.0;0.0) has area 10399.999999999343
+2017-11-19 15:15:43.705 [main] INFO  by.makedon.epam3.entity.Triangle - (0.0;0.0) (0.0;10.0) (20.0;0.0) create successfully
+2017-11-19 15:15:43.705 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (0.0;0.0) (0.0;10.0) (20.0;0.0) has area 100.0
+2017-11-19 15:15:43.706 [main] INFO  by.makedon.epam3.entity.Triangle - (10.0;10.0) (1.0;5.0) (1.0;0.0) create successfully
+2017-11-19 15:15:43.706 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (10.0;10.0) (1.0;5.0) (1.0;0.0) has perimeter 28.74925418806071
+2017-11-19 15:15:43.706 [main] INFO  by.makedon.epam3.entity.Triangle - (10.0;10.0) (1.0;5.0) (1.0;0.0) create successfully
+2017-11-19 15:15:43.706 [main] INFO  by.makedon.epam3.action.TriangleAction - triangle (10.0;10.0) (1.0;5.0) (1.0;0.0) has perimeter 28.74925418806071

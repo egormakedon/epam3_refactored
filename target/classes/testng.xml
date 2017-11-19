@@ -19,21 +19,21 @@
         </classes>
     </test>
 
-    <test name="TestTriangleValidator">
+    <test name="TestDotValidator">
         <classes>
-            <class name="TestTriangleValidator"/>
+            <class name="TestDotValidator"/>
         </classes>
     </test>
 
-    <test name="TestReaderOfFile">
+    <test name="TestDotReader">
         <classes>
-            <class name="TestReaderOfFile"/>
+            <class name="TestDotReader"/>
         </classes>
     </test>
 
     <test name="TestObserver">
         <classes>
-            <class name="TestReaderOfFile"/>
+            <class name="TestDotReader"/>
         </classes>
     </test>
 </suite>

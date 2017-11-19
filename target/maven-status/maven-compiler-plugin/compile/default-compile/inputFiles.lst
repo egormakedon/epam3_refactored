@@ -1,0 +1,13 @@
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/exception/WrongDataException.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/entity/Triangle.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/register/TriangleRegister.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/action/DotAction.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/parser/DotParser.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/exception/IncorrectFileException.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/action/TriangleAction.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/validator/DotValidator.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/reader/DotReader.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/validator/TriangleIndexValidator.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/entity/Dot.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/validator/DotParserValidator.java
+/home/egor/Документы/Observer_Egor_Makedon/src/main/java/by/makedon/epam3/register/AtributRegister.java

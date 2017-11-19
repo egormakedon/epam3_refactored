@@ -9,29 +9,12 @@ public class Dot {
         this.y = y;
     }
 
-    public void setX(double x) {
-
-        this.x = x;
-    }
-    public void setY(double y) {
-
-        this.y = y;
-    }
-    public void set(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
-    }
-
-    @Override
-    public String toString() {
-        return "(" + x + ";" + y + ")";
     }
 
     @Override
@@ -54,5 +37,10 @@ public class Dot {
         temp = Double.doubleToLongBits(y);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x + ";" + y + ")";
     }
 }
